@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Espacialidad Pastelería</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="robots" content="noindex"> 
+    <meta name="description" content="Págnia web de Espacialidad Pastelería. Realiza tus pedidos.">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" href="logo.ico">
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <nav>
+           <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="formulario.html">Pedidos</a></li>
+               <li><a href="seguimiento.html">Seguimiento</a></li> <!--Restringido a usuarios autorizados-->
+           </ul> 
+        </nav>
+    </header>
+
+    <h1>Realiza tu Pedido</h1>
+
+    <form>
+        <label for="size">Tamaño: </label>
+        <select name="size" id="size" required>
+            <option value="" disabled selected hidden>Escoge el tamaño</option>
+            <option value="indiviual">Individual</option>
+            <option value="mediano">Mediano</option>
+            <option value="familiar">Familiar</option>
+        </select> <br>
+
+        <h2><label for="sabores" required>Sabores:</label><br></h2>
+        <ul>
+            <li>
+                <label for="volteado de piña">Volteado de Piña</label>
+                <input type="checkbox" id="volteado de piña" name="sabores">
+            </li>
+            <li>
+                <label for="chocolate">Chocolate</label>
+                <input type="checkbox" id="chocolate" name="sabores">
+            </li>
+            <li>
+                <label for="tres leches">Tres leches</label>
+                <input type="checkbox" id="tres leches" name="sabores"></li>
+            <li>
+                <label for="Fresas">Fresas</label>
+                <input type="checkbox" id="fresas" name="sabores">
+            </li>
+            <li>
+                <label for="Tartaleta">Tartaleta</label>
+                <input type="checkbox" id="tartaleta" name="sabores">
+            </li>
+            <li>
+                <label for="cheesecake zarzamora">Cheesecake de zarzamora</label>
+                <input type="checkbox" id="cheesecake zarzamora" name="sabores">
+            </li>
+        </ul>
+
+        <h2><label for="adornos">Adornos</label></h2>
+        <ul>
+            <li>
+                <label for="mensaje">Mensaje</label>
+                <input type="text" id="mensaje" name="adornos" placeholder="Feliz.." maxlength="25">
+            </li>
+            <li>
+                <label for="figura">Figura</label><br>
+                <label for="novios">Novios</label>
+                <input type="radio" id="novios" name="figura"><br>
+                <label for="astronauta">Astronauta</label>
+                <input type="radio" id="astronauta" name="figura"><br>
+                <label for="superheroe">Superhéroe</label>
+                <input type="radio" id="superheroe" name="figura"><br>
+            </li>
+            <li>
+                <label for="color_betun">Color del betún</label>
+                <select id="color_betun" name="color_betun">
+                    <option value="blanco">Blanco</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="rosa">Rosa</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="verde">Verde</option>
+                </select>
+            </li>
+        </ul>
+
+        <input type="reset" id="reset1" name="reset1" value="Borrar">
+        <input type="submit" id="submit1" name="submit1" value="Enviar" onclick="alert('Pedido realizado');">
+    </form>
+    <br>
+    <a href="index.html"><button id="return_btn" name="return_btn">Regresar</button></a>
+</body>
+</html>
